@@ -44,3 +44,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIDevice {
+    
+    var modelName: String {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        return identifier
+    }
+    
+    var itIsAniPhoneX: Bool {
+        if UIDevice.current.modelName == "iPhone10,3" ||
+            UIDevice.current.modelName == "iPhone10,6" {
+            
+            print("You are using an iPhone X.")
+            return true
+        } else if UIDevice.current.modelName == "x86_64" {
+            
+            print("You are using the Simulator.")
+            return true
+        } else {
+            
+            print("You are using an '\(UIDevice.current.modelName).'")
+            return false
+        }
+    }
+}
+

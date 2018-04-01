@@ -9,6 +9,7 @@
 import Mapbox
 
 class MGLMapViewWorkaround: MGLMapView {
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

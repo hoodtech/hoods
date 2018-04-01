@@ -15,6 +15,7 @@
 		491A6314207077740068B76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491A6312207077740068B76C /* LaunchScreen.storyboard */; };
 		491A631F207077750068B76C /* HoodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A631E207077750068B76C /* HoodsTests.swift */; };
 		491A632A207077750068B76C /* HoodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A6329207077750068B76C /* HoodsUITests.swift */; };
+		491A6338207084EE0068B76C /* MGLMapViewWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A6337207084EE0068B76C /* MGLMapViewWorkaround.swift */; };
 		6354C17C0851B1CB682D7AED /* Pods_Hoods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2BFBB213D4CDC7EF9296BB /* Pods_Hoods.framework */; };
 		7B618E8D18AE221022A596BF /* Pods_HoodsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0145754F0400709A57C895D /* Pods_HoodsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		491A6325207077750068B76C /* HoodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491A6329207077750068B76C /* HoodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoodsUITests.swift; sourceTree = "<group>"; };
 		491A632B207077750068B76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491A6337207084EE0068B76C /* MGLMapViewWorkaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGLMapViewWorkaround.swift; sourceTree = "<group>"; };
 		5E3DD8083E30EAF097375D8D /* Pods-HoodsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoodsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoodsTests/Pods-HoodsTests.release.xcconfig"; sourceTree = "<group>"; };
 		71D0B080E2AAA2953B90BC79 /* Pods_HoodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9806673CC705EBD7B7A1105D /* Pods-Hoods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hoods.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hoods/Pods-Hoods.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				491A6309207077740068B76C /* AppDelegate.swift */,
 				491A630B207077740068B76C /* ViewController.swift */,
 				491A630D207077740068B76C /* Main.storyboard */,
+				491A6337207084EE0068B76C /* MGLMapViewWorkaround.swift */,
 				491A6310207077740068B76C /* Assets.xcassets */,
 				491A6312207077740068B76C /* LaunchScreen.storyboard */,
 				491A6315207077740068B76C /* Info.plist */,
@@ -461,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491A630C207077740068B76C /* ViewController.swift in Sources */,
+				491A6338207084EE0068B76C /* MGLMapViewWorkaround.swift in Sources */,
 				491A630A207077740068B76C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

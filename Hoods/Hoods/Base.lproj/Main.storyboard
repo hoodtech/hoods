@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-aj-QjG" customClass="MGLMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-aj-QjG" customClass="MGLMapViewWorkaround" customModule="Hoods" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -28,8 +28,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fXL-aj-QjG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="cDr-Gl-nlL"/>
-                            <constraint firstItem="fXL-aj-QjG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="tLr-j8-dlZ"/>
+                            <constraint firstItem="fXL-aj-QjG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K62-x0-iUK"/>
+                            <constraint firstItem="fXL-aj-QjG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ojt-5R-9dZ"/>
+                            <constraint firstItem="fXL-aj-QjG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vmw-qT-yMt"/>
+                            <constraint firstItem="fXL-aj-QjG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i5b-2q-Ut9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

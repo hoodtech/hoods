@@ -116,13 +116,9 @@
 		491A6308207077740068B76C /* Hoods */ = {
 			isa = PBXGroup;
 			children = (
-				491A6309207077740068B76C /* AppDelegate.swift */,
-				491A633920708B480068B76C /* MapController.swift */,
-				491A630D207077740068B76C /* Main.storyboard */,
-				491A6337207084EE0068B76C /* MGLMapViewWorkaround.swift */,
-				491A6310207077740068B76C /* Assets.xcassets */,
-				491A6312207077740068B76C /* LaunchScreen.storyboard */,
-				491A6315207077740068B76C /* Info.plist */,
+				49505EE820870BF60051ED8A /* Controllers */,
+				49505EE920870C520051ED8A /* Views */,
+				49505EEA20870C960051ED8A /* Infrastructure */,
 			);
 			path = Hoods;
 			sourceTree = "<group>";
@@ -143,6 +139,34 @@
 				491A632B207077750068B76C /* Info.plist */,
 			);
 			path = HoodsUITests;
+			sourceTree = "<group>";
+		};
+		49505EE820870BF60051ED8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				491A6309207077740068B76C /* AppDelegate.swift */,
+				491A633920708B480068B76C /* MapController.swift */,
+				491A6337207084EE0068B76C /* MGLMapViewWorkaround.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49505EE920870C520051ED8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				491A630D207077740068B76C /* Main.storyboard */,
+				491A6312207077740068B76C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49505EEA20870C960051ED8A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				491A6310207077740068B76C /* Assets.xcassets */,
+				491A6315207077740068B76C /* Info.plist */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		852D99DBDB2AF0953AB4A600 /* Frameworks */ = {
@@ -634,7 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43B5CQKAZ4;
-				INFOPLIST_FILE = Hoods/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hoods/Infrastructure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoods.Hoods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -650,7 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43B5CQKAZ4;
-				INFOPLIST_FILE = Hoods/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Hoods/Infrastructure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoods.Hoods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
